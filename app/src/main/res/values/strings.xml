@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WordCard</string>
+    <array name="types">
+        <item>All</item>
+        <item>Verb</item>
+        <item>Noun</item>
+        <item>Adjective</item>
+    </array>
+    <array name="states">
+        <item>All</item>
+        <item>Known</item>
+        <item>Unknown</item>
+        </array>
+</resources>

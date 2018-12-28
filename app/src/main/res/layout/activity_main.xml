@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/space3"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:subtitleTextColor="@android:color/background_light"
+        app:titleTextColor="@android:color/white">
+        /></android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_wt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_weight="0.1"
+        android:gravity="bottom|left"
+        android:text="Choose the Word Type.."
+        android:textAlignment="gravity"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_weight="0.1"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:entries="@array/types" />
+
+    <TextView
+        android:id="@+id/tv_st"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_weight="0.085"
+        android:gravity="bottom|left"
+        android:text="Choose the memory state.."
+        android:textAlignment="gravity"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <Spinner
+        android:id="@+id/spinner_st"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_weight="0.1"
+        android:backgroundTint="@android:color/holo_red_dark" />
+
+    <kumasfahn.wordcard.ScrollTextView
+        android:id="@+id/tv_wod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:gravity="center_vertical"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_weight="0.1"
+        android:background="@color/colorbrown"
+        android:text="go"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_veri"
+        android:layout_width="385dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_weight="0.1"
+        android:background="@color/colorturq"
+        android:text="database management"
+        android:textSize="20sp" />
+
+</LinearLayout>
